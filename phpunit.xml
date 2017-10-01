@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://www.phpunit.de/manual/current/en/appendixes.configuration.html -->
+<phpunit
+        backupGlobals               = "false"
+        backupStaticAttributes      = "false"
+        colors                      = "true"
+        convertErrorsToExceptions   = "true"
+        convertNoticesToExceptions  = "true"
+        convertWarningsToExceptions = "true"
+        processIsolation            = "false"
+        stopOnFailure               = "true"
+        stopOnError                 = "true"
+        syntaxCheck                 = "false"
+        bootstrap                   = "app/phpunit_bootstrap.php"
+        verbose                     = "true">
+    <testsuites>
+        <testsuite name="Books">
+            <directory suffix="Test.php">Test</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+            <exclude>
+                <directory suffix=".php">src</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <php>
+        <ini name="display_errors" value="true"/>
+    </php>
+</phpunit>

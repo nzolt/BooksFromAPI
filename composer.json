@@ -1,0 +1,28 @@
+{
+    "name": "Time2/BookList",
+    "description": "Package for querying multiple API for book list",
+    "type": "project",
+    "license": "OSL 3.0",
+    "authors": [
+        {
+            "name": "nzolt",
+            "email": "nzolt@dotweb.hu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-curl": "^7.0",
+        "monolog/monolog": "^2.0@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "": ""
+        },
+        "psr-4": {
+            "BookList\\": "src/"
+        }
+
+    },
+    "require-dev": {
+    }
+}
