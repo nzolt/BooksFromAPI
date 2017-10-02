@@ -15,7 +15,7 @@
         verbose                     = "true">
     <testsuites>
         <testsuite name="Books">
-            <directory suffix="Test.php">Test</directory>
+            <directory suffix="*Test.php">Test</directory>
         </testsuite>
     </testsuites>
     <filter>

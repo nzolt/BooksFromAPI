@@ -6,7 +6,8 @@
     "authors": [
         {
             "name": "nzolt",
-            "email": "nzolt@dotweb.hu"
+            "email": "nzolt@dotweb.hu",
+            "email": "zoltan.nagy@time2.digital"
         }
     ],
     "minimum-stability": "dev",
